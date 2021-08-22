@@ -8,9 +8,8 @@ const Intro = () => {
 
     useEffect(() => {
         init(ref.current, {
-            showCursor: false,
-            backDelay: 1000,
             showCursor: true,
+            backDelay: 1000,
             strings: ['Develop', 'Designer', 'Content Creator']
         })
     }, [])
@@ -24,7 +23,7 @@ const Intro = () => {
             <div className="right">
                 <div className="wrapper">
                 <h2>Hi There I'M</h2>
-                <h1>shalom perman</h1>
+                <h1>sholom perman</h1>
                     <h3>freelancer <span ref={ref}></span></h3>
                 <a href="#portfolio">
                         <ExpandMoreIcon className='ExpandMoreIcon' />

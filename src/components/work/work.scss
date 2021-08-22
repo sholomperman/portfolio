@@ -1,3 +1,91 @@
+@import "../../global.scss";
 .work {
-  background-color: cornflowerblue;
+  background-color: crimson;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  .arrow {
+    cursor: pointer;
+    position: absolute;
+    &.right {
+      right: 100px;
+    }
+    &.left {
+      left: 100px;
+    }
+  }
+  .slider {
+    height: 350px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: all 1s ease-out;
+    .container {
+      width: 100vw;
+      height: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .item {
+        width: 700px;
+        height: 100%;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        .left {
+          height: 100%;
+          flex: 4;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .leftContainer {
+            width: 90%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .iconContainer {
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              background-color: $secondColor;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            h1 {
+              font-size: 30px;
+            }
+            p {
+              font-size: 16px;
+            }
+            span {
+              font-size: 14px;
+              font-weight: 600;
+              text-decoration: underline;
+              cursor: pointer;
+              overflow: hidden;
+            }
+          }
+        }
+        .right {
+          height: 100%;
+          flex: 8;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          .placeHolder {
+            height: 500px;
+            width: 400px;
+            background-color: $secondColor;
+            transform: rotate(-10deg);
+          }
+        }
+      }
+    }
+  }
 }
