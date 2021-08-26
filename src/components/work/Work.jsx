@@ -1,7 +1,7 @@
 import './work.scss'
 import ArrowBackIosRoundedIcon from '@material-ui/icons/ArrowBackIosRounded';
 import ArrowForwardIosRoundedIcon from '@material-ui/icons/ArrowForwardIosRounded';
-import data from '../../dataWork';
+import data from './dataWork';
 import { useState } from 'react'
 
 const Work = () => {
@@ -17,19 +17,18 @@ const Work = () => {
             setSlider(slider < data.length -1 ? slider + 1 : 0)
     }
     return (
-        <div className='work'>
+        <div className='work' id='work'>
             <div className="slider" style={{transform: `translateX(${slider * -100}vw)`}}>
                 {data.map((item) => (
                     <div className="container">
                         <div className="item">
                             <div className="left">
                                 <div className="leftContainer">
-                                    <div className="iconContainer">
+                                    <a href={item.link} className="iconContainer">
                                         {item.icon}
-                                    </div>
+                                    </a>
                                     <h1>{item.title}</h1>
-                                    <p>{item.paragraph}</p>
-                                    <span>Project</span>
+                                    <a href={item.link}>{item.paragraph}</a>
                                 </div>
                             </div>
                             <div className="right">

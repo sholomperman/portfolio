@@ -1,11 +1,13 @@
 import './portfolio.scss'
 import PortfolioList from '../portfolioList/PortfolioList'
 import { useState, useEffect } from 'react';
-import { DataFeatures, DataWeb, DataMobile, DataDesign, DataBranding } from '../../dataPortfolio'
+import { DataFeatures, DataWeb, DataMobile, DataDesign, DataBranding } from './dataPortfolio'
 
 const Portfolio = () => {
-    const [selected, setSelected] = useState('features')
+    
+
     const [data, setData] = useState([])
+    const [selected, setSelected] = useState('features')
     const list = [
         {
             id: 'features',
@@ -29,8 +31,10 @@ const Portfolio = () => {
         }
     ]
 
-    useEffect(() => {
 
+
+    
+    useEffect(() => {
         switch (selected) {
             case 'features':
                 setData(DataFeatures)
@@ -50,13 +54,13 @@ const Portfolio = () => {
             default:
                 setData(DataFeatures)
         }
-
     }, [selected])
+
     return (
         <div className='portfolio' id='portfolio'>
             <h1>Portfolio</h1>
             <ul>
-                {list.map((i) => (
+                {list?.map((i) => (
                     <PortfolioList
                         title={i.title}
                         id={i.id}
@@ -66,13 +70,12 @@ const Portfolio = () => {
                 ))}
             </ul>
             <div className="container">
-                {data.map(i => (
-                        
-                <div className="item">
-                <img src={i.img} alt="" />
-                <h3>{i.title}</h3>
-                </div>
-                    ))}
+            {data?.map(i => (
+            <div className="item">
+            <img src={i.img} />
+            <h3>{i.title}</h3>
+            </div>
+            ))}
             </div>
         </div>
     )

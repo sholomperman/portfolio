@@ -1,8 +1,8 @@
-import app from './assets/app.jpg'
-import branding from './assets/branding.jpg'
-import designed from './assets/designed.jpg'
-import web from './assets/web.jpg'
-import working from './assets/working.jpg'
+import app from '../../assets/app.jpg'
+import branding from '../../assets/branding.jpg'
+import designed from '../../assets/designed.jpg'
+import web from '../../assets/web.jpg'
+import working from '../../assets/working.jpg'
 
 export const DataFeatures = [
     {

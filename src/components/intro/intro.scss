@@ -10,15 +10,13 @@
     align-items: center;
     overflow: hidden;
     .pic {
-      width: 500px;
+      width: 530px;
+
       display: flex;
       justify-content: center;
       align-items: center;
       border-radius: 50% 50% 0 50%;
-      background-color: $secondColor;
       img {
-        width: 400px;
-        overflow: hidden;
       }
     }
   }
@@ -48,7 +46,7 @@
           animation: blink 1s infinite;
 
           @keyframes blink {
-            100% {
+            to {
               opacity: 0;
             }
           }

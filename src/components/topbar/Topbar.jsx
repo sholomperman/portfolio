@@ -1,12 +1,16 @@
 import './topbar.scss'
 import { Person, Mail } from '@material-ui/icons'
+import { useState } from 'react'
 
 const Topbar = ({ menu, setMenu }) => {
+
+
+
     return (
         <div className={'topbar ' + (menu && 'active')}>
             <div className="wrapper">
                 <div className="left">
-                    <a href="#intro" className='logo'>btn</a>
+                    <a href="#intro" className='logo'>S.P Dev</a>
                     <div className="itemContainer">
                         <Person className='icons'/>
                         <span>+1 347 378 9160</span>

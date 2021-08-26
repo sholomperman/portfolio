@@ -14,12 +14,12 @@ const Menu = ({ menu, setMenu }) => {
                 <li onClick={handelChange}>
                     <a href="#intro">Home</a>
                 </li>
-                <li onClick={handelChange}>
+                {/* <li onClick={handelChange}>
                     <a href="#portfolio">Portfolio</a>
                 </li>
                 <li onClick={handelChange}>
                     <a href="#testimonials">Testimonials</a>
-                </li>
+                </li> */}
                 <li onClick={handelChange}>
                     <a href="#work">Work</a>
                 </li>
