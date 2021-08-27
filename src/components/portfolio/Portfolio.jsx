@@ -1,33 +1,21 @@
 import './portfolio.scss'
 import PortfolioList from '../portfolioList/PortfolioList'
 import { useState, useEffect } from 'react';
-import { DataFeatures, DataWeb, DataMobile, DataDesign, DataBranding } from './dataPortfolio'
+import { DataApps, DataCode } from './dataPortfolio'
 
 const Portfolio = () => {
     
 
     const [data, setData] = useState([])
-    const [selected, setSelected] = useState('features')
+    const [selected, setSelected] = useState('apps')
     const list = [
         {
-            id: 'features',
-            title: 'Features'
+            id: 'apps',
+            title: 'Apps'
         },
         {
-            id: 'web',
-            title: 'Web App'
-        },
-        {
-            id: 'mobile',
-            title: 'Mobile App'
-        },
-        {
-            id: 'design',
-            title: 'Design'
-        },
-        {
-            id: 'branding',
-            title: 'Branding'
+            id: 'code',
+            title: 'Code'
         }
     ]
 
@@ -36,25 +24,18 @@ const Portfolio = () => {
     
     useEffect(() => {
         switch (selected) {
-            case 'features':
-                setData(DataFeatures)
+            case 'apps':
+                setData(DataApps)
                 break;
-            case 'web':
-                setData(DataWeb)
-                break;
-            case 'mobile':
-                setData(DataMobile)
-                break;
-            case 'design':
-                setData(DataDesign)
-                break;
-            case 'branding':
-                setData(DataBranding)
+            case 'code':
+                setData(DataCode)
                 break;
             default:
-                setData(DataFeatures)
+                setData(DataApps)
         }
     }, [selected])
+
+
 
     return (
         <div className='portfolio' id='portfolio'>
@@ -72,8 +53,10 @@ const Portfolio = () => {
             <div className="container">
             {data?.map(i => (
             <div className="item">
+            <a className='link' href={i.link} target="_blank">
             <img src={i.img} />
             <h3>{i.title}</h3>
+            </a>
             </div>
             ))}
             </div>
