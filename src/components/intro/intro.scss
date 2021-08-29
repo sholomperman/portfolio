@@ -11,6 +11,10 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    @include mobile {
+      width: 100%;
+      text-align: center;
+    }
     .wrapper {
       width: 70%;
       height: 80%;
@@ -59,3 +63,9 @@
     }
   }
 }
+// @media only screen and (max-width: 650px) {
+//   .left {
+//     width: 100%;
+//     background-color: red;
+//   }
+// }

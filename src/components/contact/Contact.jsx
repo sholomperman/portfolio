@@ -39,31 +39,23 @@ const Contact = () => {
                     </ul>
                     <h1>BRIEF DESCRIPTION:</h1>
                     <ul>
-                        <li>Sholom is easy going, intelligent, friendly, respectful with his coworkers, and
-superiors.</li>
+                        <li>Sholom is easy going, intelligent, friendly, respectful with his coworkers, and superiors.</li>
                     </ul>
-
             </div>
             <div className="contactContainer">
                     <h1 className='contact'>Contact</h1>
-                {/* <div className="sideContainer"> */}
-                    {/* <div className="containerLeft"> */}
                         <a className='iconAnchor' href="mailto:sholomperman@gmail.com"><EmailIcon className='icon' />
                         <p>sholomperman@gmail.com</p>
                         </a>
                         <a className='iconAnchor' href="tel:347-378-9160"><PhoneIcon className='icon' />
                         <p>+1 347-378-9160</p>
                         </a>
-                    {/* </div> */}
-                    {/* <div className="containerRight"> */}
                         <a className='iconAnchor' href="https://github.com/sholomperman"><GitHubIcon className='icon' />
                         <p>My GitHub</p>
                         </a>
                         <a className='iconAnchor' href="linkedin.com/in/sholom-perman-758333210"><LinkedInIcon className='icon' />
                         <p> My Linkedin</p>
                         </a>
-                    {/* </div> */}
-                {/* </div> */}
             </div>
         </div>
     )
