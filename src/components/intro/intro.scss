@@ -3,30 +3,16 @@
 .intro {
   background-color: white;
   display: flex;
+  align-items: center;
+  justify-content: center;
   .left {
-    flex: 0.5;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    .pic {
-      width: 500px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50% 50% 0 50%;
-      background-color: $secondColor;
-      img {
-        width: 400px;
-        overflow: hidden;
-      }
-    }
-  }
-  .right {
-    flex: 0.5;
     position: relative;
     .wrapper {
-      width: 100%;
+      width: 70%;
       height: 80%;
       display: flex;
       justify-content: center;
@@ -41,34 +27,35 @@
       h3 {
         font-size: 30px;
         span {
-          color: $secondColor;
+          color: $mainColor;
         }
         .ityped-cursor {
           color: black;
           animation: blink 1s infinite;
 
           @keyframes blink {
-            100% {
+            to {
               opacity: 0;
             }
           }
         }
       }
-      a {
-        position: absolute;
-        bottom: 10px;
-        left: 30%;
-        .ExpandMoreIcon {
-          font-size: 100px;
-          color: black;
-          animation: arrowFlash 2s infinite;
-        }
-        @keyframes arrowFlash {
-          to {
-            opacity: 0;
-          }
-        }
-      }
+    }
+  }
+}
+.arrowIntro {
+  position: absolute;
+  bottom: 10px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  .ExpandMoreIcon {
+    font-size: 100px;
+    color: black;
+    animation: arrowFlash 2s infinite;
+  }
+  @keyframes arrowFlash {
+    to {
+      opacity: 0;
     }
   }
 }

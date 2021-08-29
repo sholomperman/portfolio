@@ -18,12 +18,6 @@ const Menu = ({ menu, setMenu }) => {
                     <a href="#portfolio">Portfolio</a>
                 </li>
                 <li onClick={handelChange}>
-                    <a href="#testimonials">Testimonials</a>
-                </li>
-                <li onClick={handelChange}>
-                    <a href="#work">Work</a>
-                </li>
-                <li onClick={handelChange}>
                     <a href="#contact">Contact</a>
                 </li>
             </ul>
