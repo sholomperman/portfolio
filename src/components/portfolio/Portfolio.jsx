@@ -53,8 +53,8 @@ const Portfolio = () => {
             <div className="container">
             {data?.map(i => (
             <div className="item">
-            <a className='link' href={i.link} target="_blank">
-            <img src={i.img} />
+            <a className='link' href={i.link} target="_blank" rel="noreferrer">
+                        <img src={i.img} alt={i.title}/>
             <h3>{i.title}</h3>
             </a>
             </div>

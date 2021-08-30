@@ -1,5 +1,4 @@
 import './topbar.scss'
-// import { Person, Mail } from '@material-ui/icons'
 
 const Topbar = ({ menu, setMenu }) => {
 
@@ -9,16 +8,7 @@ const Topbar = ({ menu, setMenu }) => {
         <div className={'topbar ' + (menu && 'active')}>
             <div className="wrapper">
                 <div className="left">
-                    <a href="#intro" className='logo'>S.P Dev</a>
-                    {/* <div className="itemContainer">
-                        <Person className='icons'/>
-                        <span>+1 347 378 9160</span>
-                    </div> */}
-                    {/* <div className="itemContainer">
-                        <Mail className='icons'/>
-                    <span>sholomperman@gmail.com</span>
-                    </div> */}
-                    
+                    <a onClick={() => { setMenu(!menu); }} href="#intro" className='logo'>S.P Dev</a>
                 </div>
                 <div className="right">
                     <div className='hamburger' onClick={()=>{setMenu(!menu)}}>

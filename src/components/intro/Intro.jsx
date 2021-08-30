@@ -2,7 +2,6 @@ import { useEffect, useRef } from 'react'
 import './intro.scss'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { init } from 'ityped';
-import computer from '../../assets/computer.jpg';
 
 const Intro = () => {
     const ref = useRef()
@@ -16,7 +15,7 @@ const Intro = () => {
     }, [])
     return (
         <div className='intro' id='intro'>
-            <div className="left">
+            <div className="container">
                 <div className="wrapper">
                 <h2>Hi There I'M</h2>
                 <h1>Sholom Perman</h1>
