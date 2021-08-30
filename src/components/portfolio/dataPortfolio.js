@@ -1,7 +1,4 @@
-import app from '../../assets/app.jpg'
-import web from '../../assets/web.jpg'
 import clock from '../../assets/clock.jpg'
-import working from '../../assets/web.jpg'
 import toDoList from '../../assets/ToDoList.jpg'
 import github from '../../assets/github.jpg'
 

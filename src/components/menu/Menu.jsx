@@ -1,7 +1,7 @@
 import './menu.scss'
 
 
-const Menu = ({ menu, setMenu }) => {
+    const Menu = ({ menu, setMenu }) => {
 
     const handelChange = () => {
         setMenu(false)
