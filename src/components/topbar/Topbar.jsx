@@ -8,7 +8,7 @@ const Topbar = ({ menu, setMenu }) => {
         <div className={'topbar ' + (menu && 'active')}>
             <div className="wrapper">
                 <div className="left">
-                    <a onClick={() => { setMenu(!menu); }} href="#intro" className='logo'>S.P Dev</a>
+                    <a onClick={() => { setMenu(menu ? false : null); }} href="#intro" className='logo'>S.P Dev</a>
                 </div>
                 <div className="right">
                     <div className='hamburger' onClick={()=>{setMenu(!menu)}}>
