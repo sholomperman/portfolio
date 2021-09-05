@@ -16,8 +16,8 @@ const App = () => {
       <Topbar menu={menu} setMenu={setMenu}/>
       <div className="sections">
         <Intro />
-        <Portfolio/>
-        <Contact/>
+        <Portfolio />
+        <Contact />
       </div>
     </div>
     </>
