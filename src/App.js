@@ -11,9 +11,9 @@ const App = () => {
 
   return (
     <>
-    <div className="app">
-      <Menu menu={menu} setMenu={setMenu}/>
       <Topbar menu={menu} setMenu={setMenu}/>
+        <div className="app" onClick={() => { setMenu(menu ? setMenu(false) : null); }}>
+      <Menu menu={menu} setMenu={setMenu}/>
       <div className="sections">
         <Intro />
         <Portfolio />
