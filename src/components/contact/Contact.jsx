@@ -53,7 +53,7 @@ const Contact = () => {
                         <a className='iconAnchor' href="https://github.com/sholomperman"><GitHubIcon className='icon' />
                         <p>My GitHub</p>
                         </a>
-                        <a className='iconAnchor' href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><LinkedInIcon className='icon' />
+                        <a className='iconAnchor' href="https://www.linkedin.com/in/sholom-perman"><LinkedInIcon className='icon' />
                         <p> My Linkedin</p>
                         </a>
             </div>

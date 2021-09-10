@@ -11,10 +11,10 @@ const App = () => {
 
   return (
     <>
+    <div className="app" >
       <Topbar menu={menu} setMenu={setMenu}/>
-        <div className="app" onClick={() => { setMenu(menu ? setMenu(false) : null); }}>
       <Menu menu={menu} setMenu={setMenu}/>
-      <div className="sections">
+      <div className="sections" onClick={() => { setMenu(menu ? setMenu(false) : null); }}>
         <Intro />
         <Portfolio />
         <Contact />
