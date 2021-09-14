@@ -1,8 +1,9 @@
-import './portfolioList.scss'
+import './portfolioList.scss';
+import { wight } from '../../globalStyles'
 
-const PortfolioList = ({title, active, setSelected, id}) => {
+const PortfolioList = ({title, active, setSelected, id, onNoff}) => {
     return (
-        <p className={active ? 'portfolioList active' : 'portfolioList'} onClick={()=> {setSelected(id)}}>
+        <p style={onNoff ? wight : null} className={active ? 'portfolioList active' : 'portfolioList'} onClick={()=> {setSelected(id)}}>
             {title}
         </p>
     )

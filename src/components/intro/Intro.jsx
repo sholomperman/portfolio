@@ -2,8 +2,9 @@ import { useEffect, useRef } from 'react'
 import './intro.scss'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { init } from 'ityped';
+import {bgBlack, bgWight, wight, black} from '../../globalStyles'
 
-const Intro = () => {
+const Intro = ({ onNoff }) => {
     const ref = useRef()
 
     useEffect(() => {
@@ -12,18 +13,28 @@ const Intro = () => {
             backDelay: 1000,
             strings: ['HTML', 'CSS/SASS', 'JavaScrips', 'ReactJS']
         })
-    }, [])
+    }, []);
+
+    const colorChange = () => {
+    let result;
+    if (onNoff  === true) {
+        result = wight
+    } else {
+        result = black
+    }
+    return result
+    }
     return (
-        <div className='intro' id='intro'>
+        <div style={onNoff ? bgBlack : bgWight} className='intro' id='intro'>
             <div className="container">
                 <div className="wrapper">
-                <h2>Hi There I'M</h2>
-                <h1>Sholom Perman</h1>
-                    <h3>Platforms <span ref={ref}></span></h3>
+                <h2 style={colorChange()}>Hi There I'M</h2>
+                <h1 style={colorChange()}>Sholom Perman</h1>
+                    <h3 style={colorChange()}>Platforms <span ref={ref}></span></h3>
                 </div>
             </div>
                 <a className='arrowIntro' href="#portfolio">
-                        <ExpandMoreIcon className='ExpandMoreIcon' />
+                        <ExpandMoreIcon style={colorChange()}className='ExpandMoreIcon' />
                 </a>
         </div>
     )

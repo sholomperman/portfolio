@@ -1,9 +1,10 @@
-import './portfolio.scss'
-import PortfolioList from '../portfolioList/PortfolioList'
+import './portfolio.scss';
+import PortfolioList from '../portfolioList/PortfolioList';
 import { useState, useEffect } from 'react';
-import { DataApps, DataCode } from './dataPortfolio'
+import { DataApps, DataCode } from './dataPortfolio';
+import {  wight, bgWight, bgBlack, black } from '../../globalStyles';
 
-const Portfolio = () => {
+const Portfolio = ({ onNoff }) => {
     
 
     const [data, setData] = useState([])
@@ -38,11 +39,12 @@ const Portfolio = () => {
 
 
     return (
-        <div className='portfolio' id='portfolio'>
-            <h1>Portfolio</h1>
+        <div style={onNoff ? bgBlack : bgWight} className='portfolio' id='portfolio'>
+            <h1 style={onNoff ? wight : black}>Portfolio</h1>
             <ul>
                 {list?.map((i) => (
                     <PortfolioList
+                        onNoff={onNoff}
                         title={i.title}
                         id={i.id}
                         active={i.id === selected}
@@ -52,7 +54,7 @@ const Portfolio = () => {
             </ul>
             <div className="container">
             {data?.map(i => (
-                <div className="item">
+                <div className="item" id='item'>
                     <a className='link' href={i.link} target="_blank" rel="noreferrer">
                         <img src={i.img} alt={i.title}/>
                     <h3>{i.title}</h3>

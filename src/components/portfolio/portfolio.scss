@@ -1,7 +1,6 @@
 @import "../../global.scss";
 
 .portfolio {
-  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,6 +23,9 @@
       width: 50%;
       height: 77%;
     }
+    #item {
+      transition: all 0s ease;
+    }
     .item {
       width: 220px;
       height: 150px;
@@ -34,7 +36,6 @@
       justify-content: center;
       align-items: center;
       position: relative;
-      transition: all 0.5s ease;
       cursor: pointer;
       .link {
         position: absolute;
@@ -59,6 +60,7 @@
       &:hover {
         background-color: $mainColor;
         img {
+          transition: all 0.4s ease;
           opacity: 0.2;
           z-index: 0;
         }

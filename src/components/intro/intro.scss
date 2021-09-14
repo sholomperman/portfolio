@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .intro {
-  background-color: rgb(255, 255, 255);
+  // background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,7 +34,7 @@
           color: $mainColor;
         }
         .ityped-cursor {
-          color: black;
+          // color: black;
           animation: blink 1s infinite;
 
           @keyframes blink {
@@ -54,7 +54,7 @@
   left: 50%;
   .ExpandMoreIcon {
     font-size: 100px;
-    color: black;
+    // color: black;
     animation: arrowFlash 2s infinite;
   }
   @keyframes arrowFlash {

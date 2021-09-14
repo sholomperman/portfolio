@@ -7,20 +7,34 @@ import Menu from './components/menu/Menu'
 import './app.scss'
 
 const App = () => {
-    const [menu, setMenu] = useState(false)
+  const [menu, setMenu] = useState(false)
+  const [onNoff, setOnNoff] = useState(false)
 
+  
   return (
-    <>
     <div className="app" >
-      <Topbar menu={menu} setMenu={setMenu}/>
-      <Menu menu={menu} setMenu={setMenu}/>
-      <div className="sections" onClick={() => { setMenu(menu ? setMenu(false) : null); }}>
-        <Intro />
-        <Portfolio />
-        <Contact />
+        <Topbar
+          menu={menu}
+          setMenu={setMenu}
+          onNoff={onNoff}
+          setOnNoff={setOnNoff}
+        />
+        <Menu menu={menu}
+          setMenu={setMenu}
+        />
+      <div className="sections"
+            onClick={() => { setMenu(menu ? setMenu(false) : null); }}>
+          <Intro
+            onNoff={onNoff}
+          />
+          <Portfolio
+            onNoff={onNoff}
+          />
+          <Contact
+            onNoff={onNoff}
+          />
       </div>
     </div>
-    </>
   )
 }
 
