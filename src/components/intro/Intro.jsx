@@ -11,10 +11,11 @@ const Intro = ({ onNoff }) => {
         init(ref.current, {
             showCursor: true,
             backDelay: 1000,
-            strings: ['HTML', 'CSS/SASS', 'JavaScrips', 'ReactJS']
+            strings: ['HTML', 'CSS/SASS', 'JavaScript', 'ReactJS']
         })
     }, []);
 
+    
     const colorChange = () => {
     let result;
     if (onNoff  === true) {
