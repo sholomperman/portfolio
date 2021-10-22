@@ -1,61 +1,136 @@
 @import "../../global.scss";
-.contact {
-  margin: 0 auto;
-  padding: 30px;
-  height: 100%;
+
+.contactContainer {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  @include mobile {
-    flex-direction: column;
-    padding: 0;
-  }
-  .container {
-    width: 70%;
-    @include mobile {
-      height: 100%;
-      h1 {
-        font-size: 20px;
-      }
-      h2 {
-        font-size: 15px;
-      }
-    }
-    ul {
-      list-style: inside;
-      margin-left: 60px;
-    }
-  }
-  .contactContainer {
+  height: 100%;
+  .top {
+    height: 75%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    top: 35%;
-    right: 5%;
-    .contact {
-      margin: 0 auto 40px auto;
-      @include mobile {
-        margin: 0;
-        padding: 0;
-      }
-    }
-    .iconAnchor {
-      color: rgb(0, 37, 85);
-      margin: 10px;
-      display: flex;
+    @include mobile {
+      flex-direction: column;
       align-items: center;
-      text-decoration: none;
+    }
+    .txt {
       font-weight: 700;
       @include mobile {
-        margin: 0;
-        font-weight: 700;
-        height: 100px;
+        font-size: small;
       }
+    }
+    .topLeft {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      @include mobile {
+        width: 100%;
+      }
+      .title {
+        font-size: x-large;
+        font-weight: 800;
+        color: rgb(14, 125, 189);
+        text-align: center;
+        margin-bottom: 20%;
+        @include mobile {
+          font-size: large;
+          margin: 0;
+        }
+      }
+      .name {
+        padding: 20px;
+        height: 40%;
+        font-size: 70px;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        @include mobile {
+          font-size: 40px;
 
-      .icon {
-        margin-right: 5px;
+          width: 100%;
+          padding: 0;
+        }
+      }
+      .ulContainer {
+        width: 30%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include mobile {
+          width: 50%;
+        }
+        ul {
+          text-align: center;
+          li {
+            margin-bottom: 20px;
+            @include mobile {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+    .topRight {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @include mobile {
+        width: 100%;
+        height: 100%;
+      }
+      .education {
+        font-weight: 800;
+        color: rgb(14, 125, 189);
+        margin-bottom: 10px;
+        @include mobile {
+          font-size: large;
+        }
+      }
+      .item {
+        width: 400px;
+        text-align: center;
+        .boldTxt {
+          font-weight: 600;
+          margin: 3px;
+          @include mobile {
+            font-size: small;
+          }
+        }
+        .location {
+          @include mobile {
+            font-size: small;
+          }
+        }
+        .dates {
+          font-size: 10px;
+          margin-bottom: 25px;
+          @include mobile {
+            font-size: 8px;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include mobile {
+      height: 15%;
+    }
+    .iconContent {
+      width: 100px;
+      height: 100px;
+      @include mobile {
+        width: 50px;
+        height: 50px;
       }
     }
   }

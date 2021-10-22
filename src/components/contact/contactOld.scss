@@ -1,0 +1,62 @@
+@import "../../global.scss";
+.contact {
+  margin: 0 auto;
+  padding: 30px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  @include mobile {
+    flex-direction: column;
+    padding: 0;
+  }
+  .container {
+    width: 70%;
+    @include mobile {
+      height: 100%;
+      h1 {
+        font-size: 20px;
+      }
+      h2 {
+        font-size: 15px;
+      }
+    }
+    ul {
+      list-style: inside;
+      margin-left: 60px;
+    }
+  }
+  .contactContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 35%;
+    right: 5%;
+    .contact {
+      margin: 0 auto 40px auto;
+      @include mobile {
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .iconAnchor {
+      color: rgb(0, 37, 85);
+      margin: 10px;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      font-weight: 700;
+      @include mobile {
+        margin: 0;
+        font-weight: 700;
+        height: 100px;
+      }
+
+      .icon {
+        margin-right: 5px;
+      }
+    }
+  }
+}

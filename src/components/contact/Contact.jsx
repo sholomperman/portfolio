@@ -5,6 +5,8 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import {  wight, bgWight, bgBlack, black } from '../../globalStyles';
 
+
+
 const Contact = ({onNoff}) => {
 
     const colorChange = () => {
@@ -17,49 +19,80 @@ const Contact = ({onNoff}) => {
     return result
     }
 
+
     return (
-        <div style={onNoff ? bgBlack : bgWight} className='contact' id='contact'>
-            <div className="container">
-                    <h1 style={colorChange()}>Sholom Perman.</h1>
-                    <h2 style={colorChange()}>Education:</h2>
-                    <ul>
-                        <li style={colorChange()}>Elementary: Ohole Torah</li>
-                        <li style={colorChange()}>High School: New Haven and boarding school Israel</li>
-                        <li style={colorChange()}>Web Development: Jewish Education Trade School</li>
-                    </ul>
-                    <h2 style={colorChange()}>skilled Languages:</h2>
-                    <ul>
-                        <li style={colorChange()}>HTML</li>
-                        <li style={colorChange()}>CSS/SASS</li>
-                        <li style={colorChange()}>JavaScript</li>
-                        <li style={colorChange()}>ReactJS</li>
-                    </ul>
-                    <h2 style={colorChange()}>Fluent in:</h2>
-                    <ul>
-                        <li style={colorChange()}>English</li>
-                        <li style={colorChange()}>Spanish</li>
-                        <li style={colorChange()}>Yiddish</li>
-                        <li style={colorChange()}>Hebrew</li>
-                    </ul>
-                    <h1 style={colorChange()}>BRIEF DESCRIPTION:</h1>
-                    <ul>
-                        <li style={colorChange()}>Sholom is easy going, intelligent, friendly, respectful with his coworkers, and superiors.</li>
-                    </ul>
+        <div className="contactContainer" style={onNoff ? bgBlack : bgWight}>
+            <div className="top">
+                <div className="topLeft">
+                    <p className="name" style={colorChange()}>Sholom Perman</p>
+                    <div className="ulContainer">
+                        <p className="title">SKILLS</p>
+                        <ul>
+                            <li className="txt" style={colorChange()}>HTML.</li>
+                            <li className="txt" style={colorChange()}>CSS.</li>
+                            <li className="txt" style={colorChange()}>JavaScript.</li>
+                            <li className="txt" style={colorChange()}>reactJS.</li>
+                        </ul>
+                    </div>
+                    <div className="ulContainer">
+                        <p className="title">LANGUAGES</p>
+                        <ul>
+                            <li className="txt" style={colorChange()}>English.</li>
+                            <li className="txt" style={colorChange()}>Spanish.</li>
+                            <li className="txt" style={colorChange()}>Yiddish.</li>
+                            <li className="txt" style={colorChange()}>Hebrew.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="topRight">
+                    <h1 className='education'>EDUCATION</h1>
+                    <div className="item">
+                        <p className="boldTxt" style={colorChange()}>Jewish Education Trade School,</p>
+                        <p className="location" style={colorChange()}>Los Angeles —Computer Science & Rabbinical Studies</p>
+                        <p className="dates" style={colorChange()}>October 2020 - June 2021</p>
+                    </div>
+                        <div className="item">
+                        <p className="boldTxt" style={colorChange()}>High School,</p>
+                        <p className="location" style={colorChange()}>New Haven</p>
+                        <p className="dates" style={colorChange()}>September 2019 - June 2020</p>
+                    </div>
+                        <div className="item">
+                        <p className="boldTxt" style={colorChange()}>High School,</p>
+                        <p className="location" style={colorChange()}>Israel</p>
+                        <p className="dates" style={colorChange()}>September 2016 - June 2019</p>
+                    </div>
+                        <div className="item">
+                        <p className="boldTxt" style={colorChange()}>Elementary, </p>
+                        <p className="location" style={colorChange()}>Brooklyn NY</p>
+                        <p className="dates"style={colorChange()}>September 2013 - June 2016</p>
+                    </div>
+                </div>
             </div>
-            <div className="contactContainer">
-                    <h1 style={colorChange()} className='contact'>Contact</h1>
-                        <a className='iconAnchor' href="mailto:sholomperman@gmail.com"><EmailIcon style={colorChange()} className='icon' />
-                        <p style={colorChange()}>sholomperman@gmail.com</p>
-                        </a>
-                        <a className='iconAnchor' href="tel:347-378-9160"><PhoneIcon style={colorChange()} className='icon' />
-                        <p style={colorChange()}>+1 347-378-9160</p>
-                        </a>
-                        <a className='iconAnchor' href="https://github.com/sholomperman"><GitHubIcon style={colorChange()} className='icon' />
-                        <p style={colorChange()}>My GitHub</p>
-                        </a>
-                        <a className='iconAnchor' href="https://www.linkedin.com/in/sholom-perman"><LinkedInIcon style={colorChange()} className='icon' />
-                        <p style={colorChange()}>My Linkedin</p>
-                        </a>
+            <div className="bottom">
+                <a href="https://github.com/sholomperman">
+                    <GitHubIcon
+                        style={colorChange()}
+                        className='iconContent'
+                    />
+                </a>
+                <a href="https://www.linkedin.com/in/sholom-perman">
+                    <LinkedInIcon 
+                        style={colorChange()}
+                        className='iconContent'
+                    />
+                </a>
+                <a href="tel:347-378-9160">
+                    <PhoneIcon
+                        style={colorChange()}
+                        className='iconContent'
+                    />
+                </a>
+                <a href="mailto:sholomperman@gmail.com">
+                    <EmailIcon
+                        style={colorChange()}
+                        className='iconContent'
+                    />
+                </a>
             </div>
         </div>
     )
