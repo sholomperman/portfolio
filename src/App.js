@@ -1,19 +1,20 @@
-import { React, useState } from 'react';
-import Topbar from './components/topbar/Topbar';
-import Intro from './components/intro/Intro';
-import Portfolio from './components/portfolio/Portfolio';
-import Contact from './components/contact/Contact';
-import Menu from './components/menu/Menu';
-import './app.scss';
+import { React, useState } from "react";
+import Topbar from "./components/topbar/Topbar";
+import Intro from "./components/intro/Intro";
+import Portfolio from "./components/portfolio/Portfolio";
+import Contact from "./components/contact/Contact";
+import Menu from "./components/menu/Menu";
+import Updated from "./components/Updated";
+import "./app.scss";
 
 const App = () => {
-  const [menu, setMenu] = useState(false)
-  const [onNoff, setOnNoff] = useState(false)
+  const [menu, setMenu] = useState(false);
+  const [onNoff, setOnNoff] = useState(false);
 
-  
   return (
-    <div className="app" >
-        <Topbar
+    <div className="app">
+      <Updated />
+      {/* <Topbar
           menu={menu}
           setMenu={setMenu}
           onNoff={onNoff}
@@ -33,9 +34,9 @@ const App = () => {
           <Contact
             onNoff={onNoff}
           />
-      </div>
+      </div> */}
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

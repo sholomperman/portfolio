@@ -1,5 +1,13 @@
 @import "../../global.scss";
 
+.scaled-frame {
+  width: 1000px;
+  height: 2000px;
+  border: 1px solid black;
+  transform: scale(0.8, 0.75);
+  zoom: 0.4;
+}
+
 .intro {
   // background-color: rgb(255, 255, 255);
   display: flex;
