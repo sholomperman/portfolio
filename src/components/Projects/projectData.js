@@ -30,8 +30,8 @@ export const ProjectsData = [
         imgPath: remote,
         isBlog: false,
         title: "Smart lights Remote (Arduino + Alexa)",
-        description: `Elevate your home automation with our Arduino-powered IR Light Control project! Seamlessly integrate non-smart 
-        lights into your smart home ecosystem using Alexa voice commands. Simply instruct Alexa, \
+        description: `Elevate your home automation with our Arduino-powered IR Light Control project! Seamlessly integrate non-smart
+        lights into your smart home ecosystem using Alexa voice commands. Simply instruct Alexa,
         and watch as your ordinary light responds to infrared signals, transforming it into a smart,
         connected lighting solution. Experience the convenience of unified control and modernize your home effortlessly.`,
     },

@@ -30,6 +30,25 @@ function AboutCard() {
             </li>
           </ul>
 
+          <br />
+          <p style={{ textAlign: "justify" }}>
+            Langues i speech fluently
+          </p>
+          <ul>
+            <li className="about-activity">
+              <ImPointRight /> English
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> Spanish
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> Hebrew
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> Yiddish
+            </li>
+          </ul>
+
           <p style={{ color: "rgb(126, 172, 136)" }}>
             "Strive to build things that make a difference!"{" "}
           </p>

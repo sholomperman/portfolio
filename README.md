@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a simple portfolio website built using React.js and SCSS.
+This is a simple portfolio website built using React.js  boot-strap and css.
 
 ## Installation
 
