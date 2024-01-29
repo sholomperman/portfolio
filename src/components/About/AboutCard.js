@@ -13,7 +13,7 @@ function AboutCard() {
             <br />
             I was employed as a software developer at Chabad.org.
             <br />
-            I have completed A software developer boot camp at JETS - Jewish Educational Trade School.
+            I have completed a software developer boot camp at JETS - Jewish Educational Trade School.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!

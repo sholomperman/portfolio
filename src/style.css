@@ -214,6 +214,7 @@ button:focus {
   animation-iteration-count: infinite; /* Never stop waving :) */
   transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
   display: inline-block;
+
 }
 
 @keyframes wave-animation {
@@ -536,6 +537,31 @@ button:focus {
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
+}
+
+/* --------- */
+/* Projects preview */
+/* --------- */
+
+
+.project-card-preview {
+  font-size: small;
+  min-height: 90vh;
+  margin: 0 auto;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+}
+
+@media (max-width: 767px) {
+  .project-card-preview {
+    min-height: auto;
+  }
+  .carousel-control-next, .carousel-control-prev {
+    display: none !important;
+  }
 }
 
 /* --------- */
