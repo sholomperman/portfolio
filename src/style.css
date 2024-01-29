@@ -10,8 +10,7 @@ html {
     rgba(17, 16, 16, 0.678),
     rgba(12, 10, 22, 0.863)
   );
-
-  --main-color: #009e03;
+  --main-color: #006a02;
 }
 
 .purple {
@@ -437,10 +436,6 @@ button:focus {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
   padding: 0 !important;
-}
-
-.blockquote-footer {
-  color: #a588c0 !important;
 }
 /* --------- */
 /* Projects */
