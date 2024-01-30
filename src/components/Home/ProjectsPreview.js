@@ -13,7 +13,7 @@ function ProjectsPreview() {
 
   return (
     <>
-      <h1 style={{color: 'white', textWrap: 'wrap', padding: 24}}>Here are some of my<span className='purple'> project</span></h1>
+      <h1 style={{color: 'white', textWrap: 'wrap', padding: 24}}>Here are some of my<span className='purple'> projects</span></h1>
     <Carousel style={{width: '80%', margin: '0 auto'}} activeIndex={index} onSelect={handleSelect}>
         {
           ProjectsData?.map((item, index)=>(
