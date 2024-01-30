@@ -26,13 +26,13 @@ function AboutCard() {
               <ImPointRight /> Working Out
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Traveling
             </li>
           </ul>
 
           <br />
           <p style={{ textAlign: "justify" }}>
-            Langues i speech fluently
+            Languages I speak fluently
           </p>
           <ul>
             <li className="about-activity">
