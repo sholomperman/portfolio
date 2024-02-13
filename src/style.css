@@ -200,6 +200,7 @@ button:focus {
   transition: all 0.3s ease-out 0s;
 }
 
+
 .navbar-nav .nav-item a:hover::after {
   width: 100%;
 }
@@ -548,15 +549,20 @@ button:focus {
   padding-left: 25px !important;
   padding-right: 25px !important;
   height: auto !important;
+  position: relative;
 }
 
 @media (max-width: 767px) {
   .project-card-preview {
     min-height: auto;
   }
-  .carousel-control-next, .carousel-control-prev {
-    display: none !important;
+  .card-title {
+    height: 4rem;
   }
+}
+
+.carousel-control-next, .carousel-control-prev {
+  display: none !important;
 }
 
 /* --------- */

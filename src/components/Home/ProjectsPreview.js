@@ -3,6 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import { ProjectsData } from '../Projects/projectData';
 import ProjectCards from '../Projects/ProjectCards';
 import { Col } from "react-bootstrap";
+import { AiOutlineInfoCircle } from "react-icons/ai";
 
 function ProjectsPreview() {
   const [index, setIndex] = useState(0);
@@ -14,16 +15,22 @@ function ProjectsPreview() {
   return (
     <>
       <h1 style={{color: 'white', textWrap: 'wrap', padding: 24}}>Here are some of my<span className='purple'> projects</span></h1>
-    <Carousel style={{width: '80%', margin: '0 auto'}} activeIndex={index} onSelect={handleSelect}>
+    <Carousel style={{width: '100%', margin: '0 auto'}} activeIndex={index} onSelect={handleSelect}>
         {
           ProjectsData?.map((item, index)=>(
             <Carousel.Item>
-              <Col key={item.id} md={4} className="project-card-preview">
+              <Col key={item.id} md={4} className="project-card-preview" 
+              style={{
+                margin: '0 auto', 
+                display: 'flex', 
+                justifyContent: 'center', 
+                alignItems: 'center'
+                }}>
                 <ProjectCards 
                 imgPath={item.imgPath}
                 isBlog={item.isBlog}
                 title={item.title}
-                description={item.description}
+                //description={item.description}
                 ghLink={item.ghLink}
                 />
               </Col>
