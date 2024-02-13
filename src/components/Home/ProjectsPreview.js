@@ -3,7 +3,6 @@ import Carousel from 'react-bootstrap/Carousel';
 import { ProjectsData } from '../Projects/projectData';
 import ProjectCards from '../Projects/ProjectCards';
 import { Col } from "react-bootstrap";
-import { AiOutlineInfoCircle } from "react-icons/ai";
 
 function ProjectsPreview() {
   const [index, setIndex] = useState(0);
