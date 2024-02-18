@@ -559,10 +559,9 @@ button:focus {
   .card-title {
     height: 4rem;
   }
-}
-
-.carousel-control-next, .carousel-control-prev {
-  display: none !important;
+  .carousel-control-next, .carousel-control-prev {
+    display: none !important;
+  }
 }
 
 /* --------- */
