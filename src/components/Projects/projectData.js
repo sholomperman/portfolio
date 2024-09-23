@@ -2,12 +2,23 @@ import Zmanim from "../../Assets/Projects/ZmanimBot.png";
 import boxes from "../../Assets/Projects/boxes.png";
 import remote from "../../Assets/Projects/remote.png";
 import mosaic from "../../Assets/Projects/mosaic.png";
+import LocalAi from "../../Assets/Projects/Ai.png"
 
 
 
 export const ProjectsData = [
     {
         id: 1,
+        imgPath: LocalAi,
+        isBlog: false,
+        title: "Web Interface for AI LLM's",
+        description: `Welcome to the Ollama LLM Project! This project integrates the LLaMA3 language 
+        model with a ReactJS web interface to provide a seamless, 
+        interactive user experience for a LLM running locally.`,
+        ghLink: "https://github.com/sholomperman/Local-AI"
+    },
+    {
+        id: 2,
         imgPath: Zmanim,
         isBlog: false,
         title: "Zmanim WhatsApp Bot",
@@ -17,7 +28,7 @@ export const ProjectsData = [
         ghLink: "https://github.com/sholomperman/zmanim"
     },
     {
-        id: 2,
+        id: 3,
         imgPath: boxes,
         isBlog: false,
         title: "Box Packer Helper",
@@ -27,7 +38,7 @@ export const ProjectsData = [
         ghLink: "https://github.com/sholomperman/Box_Packer_Helper"
     },
     {
-        id: 3,
+        id: 4,
         imgPath: remote,
         isBlog: false,
         title: "Smart lights Remote (Arduino + Alexa)",
@@ -38,7 +49,7 @@ export const ProjectsData = [
         ghLink: "#"
     },
     {
-        id: 4,
+        id: 5,
         imgPath: mosaic,
         isBlog: false,
         title: "Create a Mosaic",
